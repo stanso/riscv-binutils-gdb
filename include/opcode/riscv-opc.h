@@ -93,6 +93,14 @@
 #define MASK_SRLI  0xfc00707f
 #define MATCH_SRAI 0x40005013
 #define MASK_SRAI  0xfc00707f
+
+#define MATCH_DP_INC3D 0xb
+#define MASK_DP_INC3D  0xfe00707f
+#define MATCH_DP_LD_INC 0x100b
+#define MASK_DP_LD_INC  0x707f
+#define MATCH_DP_SD_INC 0x200b
+#define MASK_DP_SD_INC  0x707f
+
 #define MATCH_ORI 0x6013
 #define MASK_ORI  0x707f
 #define MATCH_ANDI 0x7013
