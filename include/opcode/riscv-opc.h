@@ -96,10 +96,16 @@
 
 #define MATCH_DP_INC3D 0xb
 #define MASK_DP_INC3D  0xfe00707f
-#define MATCH_DP_LD_INC 0x100b
+#define MATCH_DP_INC3W 0x100b
+#define MASK_DP_INC3W  0xfe00707f
+#define MATCH_DP_INC3B 0x200b
+#define MASK_DP_INC3B  0xfe00707f
+#define MATCH_DP_LD_INC 0x300b
 #define MASK_DP_LD_INC  0x707f
-#define MATCH_DP_SD_INC 0x200b
+#define MATCH_DP_SD_INC 0x400b
 #define MASK_DP_SD_INC  0x707f
+#define MATCH_DP_BINDD 0x500b
+#define MASK_DP_BINDD  0xfe00707f
 
 #define MATCH_ORI 0x6013
 #define MASK_ORI  0x707f
