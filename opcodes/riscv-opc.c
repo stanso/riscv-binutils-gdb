@@ -1732,6 +1732,8 @@ const struct riscv_opcode riscv_opcodes[] =
 {"vmv4r.v",    0, INSN_CLASS_V, "Vd,Vt", MATCH_VMV4RV, MASK_VMV4RV, match_opcode, 0},
 {"vmv8r.v",    0, INSN_CLASS_V, "Vd,Vt", MATCH_VMV8RV, MASK_VMV8RV, match_opcode, 0},
 
+{"vmmerge_pos.vv",   0, INSN_CLASS_V,  "Vd,Vt,Vs", MATCH_VMMERGE_POS_VV, MASK_VMMERGE_POS_VV, match_opcode, 0 },
+
 /* Terminate the list.  */
 {0, 0, INSN_CLASS_NONE, 0, 0, 0, 0, 0}
 };
