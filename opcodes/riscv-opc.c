@@ -470,8 +470,8 @@ const struct riscv_opcode riscv_opcodes[] =
 {"dp_ld_inc",  64, INSN_CLASS_I, "d,o(s)",  MATCH_DP_LD_INC, MASK_DP_LD_INC, match_opcode, INSN_DREF|INSN_8_BYTE },
 {"dp_sd_inc",  64, INSN_CLASS_I, "t,q(s)",  MATCH_DP_SD_INC, MASK_DP_SD_INC, match_opcode, INSN_DREF|INSN_8_BYTE },
 {"dp_bindd",    0, INSN_CLASS_I,  "d,s,t",   MATCH_DP_BINDD,  MASK_DP_BINDD, match_opcode, 0 },
+{"vssetlen",    0, INSN_CLASS_I,  "d,s,t",   MATCH_VSSETLEN,  MASK_VSSETLEN, match_opcode, 0 },
 {"vsstep",     64, INSN_CLASS_I,  "d,s,j",   MATCH_VSSTEP,  MASK_VSSTEP, match_opcode, INSN_8_BYTE },
-{"vssetlen",    0, INSN_CLASS_I,  "d,s,j",   MATCH_VSSETLEN,  MASK_VSSETLEN, match_opcode, 0 },
 
 /* Atomic memory operation instruction subset.  */
 {"lr.w",            0, INSN_CLASS_A, "d,0(s)",   MATCH_LR_W, MASK_LR_W|MASK_AQRL, match_opcode, INSN_DREF|INSN_4_BYTE },

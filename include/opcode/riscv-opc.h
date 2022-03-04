@@ -110,7 +110,7 @@
 #define MATCH_VSSTEP 0x2b
 #define MASK_VSSTEP  0x707f
 #define MATCH_VSSETLEN 0x102b
-#define MASK_VSSETLEN  0x707f
+#define MASK_VSSETLEN  0xfe00707f
 
 #define MATCH_ORI 0x6013
 #define MASK_ORI  0x707f
