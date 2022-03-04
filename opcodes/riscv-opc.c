@@ -470,6 +470,8 @@ const struct riscv_opcode riscv_opcodes[] =
 {"dp_ld_inc",  64, INSN_CLASS_I, "d,o(s)",  MATCH_DP_LD_INC, MASK_DP_LD_INC, match_opcode, INSN_DREF|INSN_8_BYTE },
 {"dp_sd_inc",  64, INSN_CLASS_I, "t,q(s)",  MATCH_DP_SD_INC, MASK_DP_SD_INC, match_opcode, INSN_DREF|INSN_8_BYTE },
 {"dp_bindd",    0, INSN_CLASS_I,  "d,s,t",   MATCH_DP_BINDD,  MASK_DP_BINDD, match_opcode, 0 },
+{"vsstep",     64, INSN_CLASS_I,  "d,s,j",   MATCH_VSSTEP,  MASK_VSSTEP, match_opcode, INSN_8_BYTE },
+{"vssetlen",    0, INSN_CLASS_I,  "d,s,j",   MATCH_VSSETLEN,  MASK_VSSETLEN, match_opcode, 0 },
 
 /* Atomic memory operation instruction subset.  */
 {"lr.w",            0, INSN_CLASS_A, "d,0(s)",   MATCH_LR_W, MASK_LR_W|MASK_AQRL, match_opcode, INSN_DREF|INSN_4_BYTE },
@@ -1733,6 +1735,8 @@ const struct riscv_opcode riscv_opcodes[] =
 {"vmv8r.v",    0, INSN_CLASS_V, "Vd,Vt", MATCH_VMV8RV, MASK_VMV8RV, match_opcode, 0},
 
 {"vmmerge_pos.vv",   0, INSN_CLASS_V,  "Vd,Vt,Vs", MATCH_VMMERGE_POS_VV, MASK_VMMERGE_POS_VV, match_opcode, 0 },
+{"vsbindle64.v",     0, INSN_CLASS_V,  "Vd,t,Vi", MATCH_VSBINDLE64_V, MASK_VSBINDLE64_V, match_opcode, 0 },
+// {"vsbindle64.v",     0, INSN_CLASS_V,  "Vd,Vt,Vi", MATCH_VSBINDLE64_V, MASK_VSBINDLE64_V, match_opcode, 0 },
 
 /* Terminate the list.  */
 {0, 0, INSN_CLASS_NONE, 0, 0, 0, 0, 0}
