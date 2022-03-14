@@ -1743,7 +1743,7 @@ const struct riscv_opcode riscv_opcodes[] =
 {"vmmerge_pos.vv", 0, INSN_CLASS_V,  "Vd,Vt,Vs",  MATCH_VMMERGE_POS_VV, MASK_VMMERGE_POS_VV, match_opcode, 0 },
 {"vsbindl.v",      0, INSN_CLASS_V,  "Vd,t,Vi",   MATCH_VSBINDL_V,      MASK_VSBINDL_V,      match_opcode, 0 },
 {"vsbinds.v",      0, INSN_CLASS_V,  "Vd,t,Vi",   MATCH_VSBINDS_V,      MASK_VSBINDS_V,      match_opcode, 0 },
-{"viota2.m",       0, INSN_CLASS_V,  "Vd,VtVm,s", MATCH_VIOTA2_M,       MASK_VIOTA2_M,       match_opcode, 0 },
+{"viota2.m",       0, INSN_CLASS_V,  "Vd,s,VtVm", MATCH_VIOTA2_M,       MASK_VIOTA2_M,       match_opcode, 0 },
 
 /* Terminate the list.  */
 {0, 0, INSN_CLASS_NONE, 0, 0, 0, 0, 0}
