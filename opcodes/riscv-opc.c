@@ -474,8 +474,8 @@ const struct riscv_opcode riscv_opcodes[] =
 {"dp_sd_inc",  64, INSN_CLASS_I, "t,q(s)",   MATCH_DP_SD_INC, MASK_DP_SD_INC, match_opcode, INSN_DREF|INSN_8_BYTE },
 {"dp_bindd",    0, INSN_CLASS_I,  "d,s,t",   MATCH_DP_BINDD,  MASK_DP_BINDD,  match_opcode, 0 },
 
-{"vssetlen",    0, INSN_CLASS_I,  "d,s,t",   MATCH_VSSETLEN,  MASK_VSSETLEN, match_opcode, 0 },
-{"vsgetlen",    0, INSN_CLASS_I,  "d,s,t",   MATCH_VSGETLEN,  MASK_VSGETLEN, match_opcode, 0 },
+{"vssetlen",    0, INSN_CLASS_I,  "d,s,j",   MATCH_VSSETLEN,  MASK_VSSETLEN, match_opcode, 0 },
+{"vsgetlen",    0, INSN_CLASS_I,  "d,s,j",   MATCH_VSGETLEN,  MASK_VSGETLEN, match_opcode, 0 },
 {"vsstepe64",  64, INSN_CLASS_I,  "d,s,j",   MATCH_VSSTEPE64, MASK_VSSTEPE64,   match_opcode, INSN_8_BYTE },
 
 /* Atomic memory operation instruction subset.  */
@@ -1743,6 +1743,7 @@ const struct riscv_opcode riscv_opcodes[] =
 {"vmmerge_pos.vv", 0, INSN_CLASS_V,  "Vd,Vt,Vs",  MATCH_VMMERGE_POS_VV, MASK_VMMERGE_POS_VV, match_opcode, 0 },
 {"vsbindl.v",      0, INSN_CLASS_V,  "Vd,t,Vi",   MATCH_VSBINDL_V,      MASK_VSBINDL_V,      match_opcode, 0 },
 {"vsbinds.v",      0, INSN_CLASS_V,  "Vd,t,Vi",   MATCH_VSBINDS_V,      MASK_VSBINDS_V,      match_opcode, 0 },
+{"vsunbind.v",     0, INSN_CLASS_V,  "Vd,t,Vi",   MATCH_VSUNBIND_V,     MASK_VSUNBIND_V,     match_opcode, 0 },
 {"viota2.m",       0, INSN_CLASS_V,  "Vd,s,VtVm", MATCH_VIOTA2_M,       MASK_VIOTA2_M,       match_opcode, 0 },
 
 /* Terminate the list.  */
